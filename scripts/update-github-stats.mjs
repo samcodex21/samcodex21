@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 const root = new URL("../", import.meta.url);
 const readmePath = new URL("README.md", root);
 
-const owner = process.env.GITHUB_REPOSITORY_OWNER || process.env.PROFILE_USERNAME || "samcodex";
+const owner = process.env.GITHUB_REPOSITORY_OWNER || process.env.PROFILE_USERNAME || "samcodex21";
 const token = process.env.GITHUB_TOKEN;
 
 async function githubJson(url) {

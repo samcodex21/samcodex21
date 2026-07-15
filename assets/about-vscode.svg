@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560" role="img" aria-labelledby="title desc">
   <title id="title">Sam Codex About Me VS Code Section</title>
-  <desc id="desc">A dark VS Code style TypeScript class containing role, mission, focus, currently building, tech, and motto.</desc>
+  <desc id="desc">A dark VS Code style TypeScript class containing role, mission, focus, currently building, tech, and motto with a typing animation.</desc>
   <defs>
     <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#F5D879"/>
@@ -14,6 +14,14 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <clipPath id="typeLine1"><rect x="120" y="96" width="0" height="38"><animate attributeName="width" values="0;0;250;250;0" keyTimes="0;0.02;0.12;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine2"><rect x="156" y="136" width="0" height="38"><animate attributeName="width" values="0;0;520;520;0" keyTimes="0;0.12;0.24;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine3"><rect x="156" y="176" width="0" height="38"><animate attributeName="width" values="0;0;980;980;0" keyTimes="0;0.24;0.42;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine4"><rect x="156" y="216" width="0" height="38"><animate attributeName="width" values="0;0;800;800;0" keyTimes="0;0.42;0.56;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine5"><rect x="156" y="256" width="0" height="38"><animate attributeName="width" values="0;0;830;830;0" keyTimes="0;0.56;0.68;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine6"><rect x="156" y="296" width="0" height="38"><animate attributeName="width" values="0;0;760;760;0" keyTimes="0;0.68;0.8;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine7"><rect x="156" y="336" width="0" height="38"><animate attributeName="width" values="0;0;720;720;0" keyTimes="0;0.8;0.9;0.94;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeLine8"><rect x="120" y="376" width="0" height="38"><animate attributeName="width" values="0;0;40;40;0" keyTimes="0;0.9;0.94;0.98;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
   </defs>
   <rect width="1180" height="560" rx="24" fill="#08080A"/>
   <circle cx="970" cy="96" r="210" fill="#D6AF36" opacity="0.08"/>
@@ -39,14 +47,14 @@
     <text x="50" y="406" fill="#6F737A">08</text>
   </g>
   <g font-family="Consolas, 'Courier New', monospace" font-size="24">
-    <text x="124" y="126"><tspan fill="#C586C0">class</tspan><tspan fill="#4EC9B0"> SamCodex</tspan><tspan fill="#D4D4D4"> {</tspan></text>
-    <text x="160" y="166"><tspan fill="#9CDCFE">role</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">"AI Automation Engineer"</tspan><tspan fill="#D4D4D4">;</tspan></text>
-    <text x="160" y="206"><tspan fill="#9CDCFE">mission</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">"Build intelligent systems that automate work and scale impact."</tspan><tspan fill="#D4D4D4">;</tspan></text>
-    <text x="160" y="246"><tspan fill="#9CDCFE">focus</tspan><tspan fill="#D4D4D4"> = [</tspan><tspan fill="#CE9178">"AI agents"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"SaaS"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"RAG"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"automation"</tspan><tspan fill="#D4D4D4">];</tspan></text>
-    <text x="160" y="286"><tspan fill="#9CDCFE">currentlyBuilding</tspan><tspan fill="#D4D4D4"> = [</tspan><tspan fill="#CE9178">"Personal IDE"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"Ultimate RAG Agent"</tspan><tspan fill="#D4D4D4">];</tspan></text>
-    <text x="160" y="326"><tspan fill="#9CDCFE">tech</tspan><tspan fill="#D4D4D4"> = [</tspan><tspan fill="#CE9178">"TypeScript"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"Python"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"FastAPI"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"Docker"</tspan><tspan fill="#D4D4D4">];</tspan></text>
-    <text x="160" y="366"><tspan fill="#9CDCFE">motto</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">"Build • Automate • Scale • Impact"</tspan><tspan fill="#D4D4D4">;</tspan></text>
-    <text x="124" y="406" fill="#D4D4D4">}</text>
+    <g clip-path="url(#typeLine1)"><text x="124" y="126"><tspan fill="#C586C0">class</tspan><tspan fill="#4EC9B0"> SamCodex</tspan><tspan fill="#D4D4D4"> {</tspan></text></g>
+    <g clip-path="url(#typeLine2)"><text x="160" y="166"><tspan fill="#9CDCFE">role</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">"AI Automation Engineer"</tspan><tspan fill="#D4D4D4">;</tspan></text></g>
+    <g clip-path="url(#typeLine3)"><text x="160" y="206"><tspan fill="#9CDCFE">mission</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">"Build intelligent systems that automate work and scale impact."</tspan><tspan fill="#D4D4D4">;</tspan></text></g>
+    <g clip-path="url(#typeLine4)"><text x="160" y="246"><tspan fill="#9CDCFE">focus</tspan><tspan fill="#D4D4D4"> = [</tspan><tspan fill="#CE9178">"AI agents"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"SaaS"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"RAG"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"automation"</tspan><tspan fill="#D4D4D4">];</tspan></text></g>
+    <g clip-path="url(#typeLine5)"><text x="160" y="286"><tspan fill="#9CDCFE">currentlyBuilding</tspan><tspan fill="#D4D4D4"> = [</tspan><tspan fill="#CE9178">"Personal IDE"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"Ultimate RAG Agent"</tspan><tspan fill="#D4D4D4">];</tspan></text></g>
+    <g clip-path="url(#typeLine6)"><text x="160" y="326"><tspan fill="#9CDCFE">tech</tspan><tspan fill="#D4D4D4"> = [</tspan><tspan fill="#CE9178">"TypeScript"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"Python"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"FastAPI"</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#CE9178">"Docker"</tspan><tspan fill="#D4D4D4">];</tspan></text></g>
+    <g clip-path="url(#typeLine7)"><text x="160" y="366"><tspan fill="#9CDCFE">motto</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">"Build &#8226; Automate &#8226; Scale &#8226; Impact"</tspan><tspan fill="#D4D4D4">;</tspan></text></g>
+    <g clip-path="url(#typeLine8)"><text x="124" y="406" fill="#D4D4D4">}</text></g>
   </g>
   <g filter="url(#glow)">
     <path d="M782 440H1088" stroke="#D6AF36" stroke-opacity="0.65"/>

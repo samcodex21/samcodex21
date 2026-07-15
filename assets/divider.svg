@@ -18,9 +18,4 @@
   </defs>
   <rect width="1280" height="78" fill="#0B0B0D" fill-opacity="0"/>
   <path d="M64 39H1216" stroke="url(#line)" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="640" cy="39" r="9" fill="#D6AF36" filter="url(#glow)">
-    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="592" cy="39" r="4" fill="#F5D879" opacity="0.9"/>
-  <circle cx="688" cy="39" r="4" fill="#F5D879" opacity="0.9"/>
 </svg>
