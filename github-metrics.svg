@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="420" viewBox="0 0 740 420" role="img" aria-labelledby="title desc">
+  <title id="title">Sam Codex GitHub Metrics</title>
+  <desc id="desc">Black and gold placeholder card for GitHub metrics before automation generates live metrics.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5d879"/>
+      <stop offset="0.45" stop-color="#d6af36"/>
+      <stop offset="1" stop-color="#7a5a12"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="740" height="420" rx="18" fill="#0b0b0d"/>
+  <path d="M0 84H740M0 168H740M0 252H740M0 336H740M92 0V420M184 0V420M276 0V420M368 0V420M460 0V420M552 0V420M644 0V420" stroke="#d6af36" stroke-opacity="0.08"/>
+  <circle cx="624" cy="88" r="170" fill="#d6af36" opacity="0.08"/>
+  <circle cx="116" cy="344" r="132" fill="#d6af36" opacity="0.06"/>
+  <rect x="44" y="44" width="652" height="332" rx="16" fill="#141417" fill-opacity="0.76" stroke="#d6af36" stroke-opacity="0.42"/>
+  <text x="72" y="102" fill="#d6af36" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Sam Codex Metrics</text>
+  <text x="72" y="142" fill="#f5f2e8" font-family="Segoe UI, Arial, sans-serif" font-size="18">Live GitHub metrics will appear here after the workflow runs.</text>
+  <g transform="translate(72 190)">
+    <rect width="180" height="88" rx="12" fill="#0b0b0d" stroke="#d6af36" stroke-opacity="0.34"/>
+    <text x="22" y="38" fill="#f5d879" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Automation</text>
+    <rect x="22" y="56" width="126" height="8" rx="4" fill="url(#gold)" filter="url(#glow)"/>
+  </g>
+  <g transform="translate(280 190)">
+    <rect width="180" height="88" rx="12" fill="#0b0b0d" stroke="#d6af36" stroke-opacity="0.34"/>
+    <text x="22" y="38" fill="#f5d879" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Open Source</text>
+    <rect x="22" y="56" width="138" height="8" rx="4" fill="url(#gold)" filter="url(#glow)"/>
+  </g>
+  <g transform="translate(488 190)">
+    <rect width="180" height="88" rx="12" fill="#0b0b0d" stroke="#d6af36" stroke-opacity="0.34"/>
+    <text x="22" y="38" fill="#f5d879" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">SaaS Builder</text>
+    <rect x="22" y="56" width="116" height="8" rx="4" fill="url(#gold)" filter="url(#glow)"/>
+  </g>
+  <text x="72" y="334" fill="#f5f2e8" fill-opacity="0.72" font-family="Consolas, monospace" font-size="15">&gt; build • automate • scale • impact</text>
+</svg>
