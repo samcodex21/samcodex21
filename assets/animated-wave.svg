@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="140" viewBox="0 0 1280 140" role="img" aria-labelledby="title">
+  <title id="title">Animated Black and Gold Wave</title>
+  <defs>
+    <linearGradient id="waveGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A5A12"/>
+      <stop offset="0.5" stop-color="#D6AF36"/>
+      <stop offset="1" stop-color="#F5D879"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="140" fill="#08080A"/>
+  <path fill="url(#waveGold)" opacity="0.72">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0 90 C180 35 360 145 540 90 C720 35 900 145 1080 90 C1160 66 1220 65 1280 90 L1280 140 L0 140 Z;
+              M0 86 C180 140 360 35 540 86 C720 140 900 35 1080 86 C1160 112 1220 112 1280 86 L1280 140 L0 140 Z;
+              M0 90 C180 35 360 145 540 90 C720 35 900 145 1080 90 C1160 66 1220 65 1280 90 L1280 140 L0 140 Z"/>
+  </path>
+  <text x="640" y="60" text-anchor="middle" fill="#F5F2E8" font-family="Consolas, monospace" font-size="18">Build • Automate • Scale • Impact</text>
+</svg>

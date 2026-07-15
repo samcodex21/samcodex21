@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Sam Codex Logo</title>
+  <desc id="desc">Black and gold SC monogram for the Sam Codex developer brand.</desc>
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#D6AF36" stop-opacity="0.34"/>
+      <stop offset="0.56" stop-color="#D6AF36" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#0B0B0D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="20%" y1="0%" x2="82%" y2="100%">
+      <stop offset="0" stop-color="#F5D879"/>
+      <stop offset="0.45" stop-color="#D6AF36"/>
+      <stop offset="1" stop-color="#7A5A12"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="#0B0B0D"/>
+  <circle cx="256" cy="256" r="214" fill="url(#halo)"/>
+  <circle cx="256" cy="256" r="160" fill="#111114" stroke="url(#gold)" stroke-width="5"/>
+  <circle cx="256" cy="256" r="128" fill="none" stroke="#F5D879" stroke-opacity="0.24" stroke-width="2"/>
+  <path d="M140 256h44m144 0h44M256 140v44m0 144v44M184 184l31 31m113 113l31 31m0-175-31 31M215 328l-31 31" stroke="#D6AF36" stroke-opacity="0.42" stroke-width="2"/>
+  <text x="256" y="283" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="132" font-weight="800" letter-spacing="0" fill="url(#gold)" filter="url(#softGlow)">SC</text>
+  <text x="256" y="338" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="3" fill="#F5F2E8" opacity="0.9">SAM CODEX</text>
+</svg>

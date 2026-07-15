@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="280" viewBox="0 0 1180 280" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Sam Codex Terminal</title>
+  <desc id="desc">Black and gold animated terminal showing Sam Codex automation commands.</desc>
+  <defs>
+    <linearGradient id="goldLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B0B0D"/>
+      <stop offset="0.5" stop-color="#D6AF36"/>
+      <stop offset="1" stop-color="#0B0B0D"/>
+      <animate attributeName="x1" values="-1;0;1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1;2" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1180" height="280" rx="22" fill="#08080A"/>
+  <rect x="24" y="24" width="1132" height="232" rx="18" fill="#111114" stroke="#D6AF36" stroke-opacity="0.5"/>
+  <rect x="24" y="24" width="1132" height="46" rx="18" fill="#17171B"/>
+  <circle cx="56" cy="47" r="6" fill="#ff5f57"/>
+  <circle cx="78" cy="47" r="6" fill="#ffbd2e"/>
+  <circle cx="100" cy="47" r="6" fill="#28c840"/>
+  <path d="M52 92H1128" stroke="url(#goldLine)" stroke-width="2" filter="url(#glow)"/>
+  <g font-family="Consolas, monospace" font-size="24">
+    <text x="58" y="132" fill="#D6AF36">&gt; sam-codex init ai-automation</text>
+    <text x="58" y="170" fill="#F5F2E8">&gt; connect agents --mode production</text>
+    <text x="58" y="208" fill="#F5D879">&gt; build • automate • scale • impact</text>
+    <rect x="553" y="190" width="14" height="24" fill="#D6AF36">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

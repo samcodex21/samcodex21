@@ -1,0 +1,15 @@
+{
+  "maxArticles": 5,
+  "devto": {
+    "username": "samcodex",
+    "feedUrl": ""
+  },
+  "hashnode": {
+    "feedUrl": ""
+  },
+  "medium": {
+    "username": "samcodex",
+    "feedUrl": ""
+  },
+  "customFeeds": []
+}

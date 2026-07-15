@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="240" viewBox="0 0 1180 240" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Sam Codex Statistics</title>
+  <desc id="desc">Animated black and gold statistics cards for developer profile metrics.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5D879"/>
+      <stop offset="0.5" stop-color="#D6AF36"/>
+      <stop offset="1" stop-color="#7A5A12"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1180" height="240" rx="22" fill="#08080A"/>
+  <g transform="translate(42 46)">
+    <g>
+      <rect width="250" height="148" rx="16" fill="#111114" stroke="#D6AF36" stroke-opacity="0.45"/>
+      <text x="26" y="48" fill="#F5F2E8" font-family="Segoe UI, Arial" font-size="19" font-weight="700">Automation</text>
+      <rect x="26" y="82" width="0" height="12" rx="6" fill="url(#gold)" filter="url(#glow)">
+        <animate attributeName="width" values="0;178;178" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="26" y="124" fill="#D6AF36" font-family="Consolas, monospace" font-size="22">AI Systems</text>
+    </g>
+    <g transform="translate(282 0)">
+      <rect width="250" height="148" rx="16" fill="#111114" stroke="#D6AF36" stroke-opacity="0.45"/>
+      <text x="26" y="48" fill="#F5F2E8" font-family="Segoe UI, Arial" font-size="19" font-weight="700">SaaS</text>
+      <rect x="26" y="82" width="0" height="12" rx="6" fill="url(#gold)" filter="url(#glow)">
+        <animate attributeName="width" values="0;152;152" dur="3.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="26" y="124" fill="#D6AF36" font-family="Consolas, monospace" font-size="22">Products</text>
+    </g>
+    <g transform="translate(564 0)">
+      <rect width="250" height="148" rx="16" fill="#111114" stroke="#D6AF36" stroke-opacity="0.45"/>
+      <text x="26" y="48" fill="#F5F2E8" font-family="Segoe UI, Arial" font-size="19" font-weight="700">Open Source</text>
+      <rect x="26" y="82" width="0" height="12" rx="6" fill="url(#gold)" filter="url(#glow)">
+        <animate attributeName="width" values="0;190;190" dur="3.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="26" y="124" fill="#D6AF36" font-family="Consolas, monospace" font-size="22">Impact</text>
+    </g>
+    <g transform="translate(846 0)">
+      <rect width="250" height="148" rx="16" fill="#111114" stroke="#D6AF36" stroke-opacity="0.45"/>
+      <text x="26" y="48" fill="#F5F2E8" font-family="Segoe UI, Arial" font-size="19" font-weight="700">Developer</text>
+      <rect x="26" y="82" width="0" height="12" rx="6" fill="url(#gold)" filter="url(#glow)">
+        <animate attributeName="width" values="0;166;166" dur="4.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="26" y="124" fill="#D6AF36" font-family="Consolas, monospace" font-size="22">Dashboard</text>
+    </g>
+  </g>
+</svg>

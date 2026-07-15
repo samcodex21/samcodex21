@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="150" viewBox="0 0 1180 150" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Tech Icons</title>
+  <desc id="desc">Animated black and gold technology labels for Sam Codex.</desc>
+  <rect width="1180" height="150" rx="20" fill="#08080A"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">
+    <g transform="translate(74 48)">
+      <circle cx="28" cy="28" r="26" fill="#111114" stroke="#D6AF36"/><text x="28" y="35" text-anchor="middle" fill="#D6AF36">TS</text>
+      <animateTransform attributeName="transform" type="translate" values="74 48;74 40;74 48" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(238 48)">
+      <circle cx="28" cy="28" r="26" fill="#111114" stroke="#D6AF36"/><text x="28" y="35" text-anchor="middle" fill="#D6AF36">AI</text>
+      <animateTransform attributeName="transform" type="translate" values="238 48;238 40;238 48" dur="2.8s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(402 48)">
+      <circle cx="28" cy="28" r="26" fill="#111114" stroke="#D6AF36"/><text x="28" y="35" text-anchor="middle" fill="#D6AF36">PY</text>
+      <animateTransform attributeName="transform" type="translate" values="402 48;402 40;402 48" dur="3.2s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(566 48)">
+      <circle cx="28" cy="28" r="26" fill="#111114" stroke="#D6AF36"/><text x="28" y="35" text-anchor="middle" fill="#D6AF36">DB</text>
+      <animateTransform attributeName="transform" type="translate" values="566 48;566 40;566 48" dur="2.6s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(730 48)">
+      <circle cx="28" cy="28" r="26" fill="#111114" stroke="#D6AF36"/><text x="28" y="35" text-anchor="middle" fill="#D6AF36">API</text>
+      <animateTransform attributeName="transform" type="translate" values="730 48;730 40;730 48" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(894 48)">
+      <circle cx="28" cy="28" r="26" fill="#111114" stroke="#D6AF36"/><text x="28" y="35" text-anchor="middle" fill="#D6AF36">UX</text>
+      <animateTransform attributeName="transform" type="translate" values="894 48;894 40;894 48" dur="3.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

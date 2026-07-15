@@ -12,16 +12,16 @@ Primary colors:
 
 Visual direction:
 
-- Minimal
 - Luxury
 - Cyberpunk
 - Glassmorphism
 - Developer dashboard
 - Black and gold contrast
+- Futuristic AI command center
 
 ## Portrait
 
-The attached request asks for an uploaded portrait, but no portrait file was present with the provided text attachment.
+No portrait image file was present in the attached files. The repository includes a transparent, gold-lit profile asset at `assets/profile.png` so the hero remains production-ready.
 
 To use the final portrait:
 
@@ -29,7 +29,7 @@ To use the final portrait:
 2. Export it as a transparent PNG.
 3. Add a soft gold outer glow and subtle rim light.
 4. Save it as `assets/profile.png`.
-5. Keep the canvas near square so it sits correctly in the hero section.
+5. Keep the canvas square so it sits correctly in the hero section.
 
 Recommended export:
 
@@ -39,14 +39,14 @@ Recommended export:
 
 ## Banner
 
-The banner is `assets/banner.png`.
+The hero banner is `assets/banner.png`.
 
 Required size:
 
 - Width: `1280`
 - Height: `640`
 
-The generated banner already includes:
+The generated banner includes:
 
 - `SAM CODEX`
 - `AI AUTOMATION ENGINEER`
@@ -59,44 +59,81 @@ The generated banner already includes:
 - terminal and dashboard panels
 - gold glow accents
 
-## README Cards
+## SVG Assets
 
-Project cards are in the **Current Projects** section of `README.md`.
+Editable brand primitives:
 
-For each project, update:
+- `assets/logo.svg`
+- `assets/divider.svg`
+- `assets/about-vscode.svg`
+- `assets/animated-terminal.svg`
+- `assets/animated-stats.svg`
+- `assets/animated-quote.svg`
+- `assets/animated-header.svg`
+- `assets/animated-gradient.svg`
+- `assets/animated-tech-icons.svg`
+- `assets/animated-wave.svg`
 
-- status badge
-- description
-- progress percentage
-- technology tags
+Use the same black and gold palette when editing them.
 
-## Featured Repositories
+## Components
 
-Replace the featured repository links and `repo=` query values in the **Featured Repository** section.
+Reusable README snippets live in `components/`:
 
-Example:
+- `hero.md`
+- `typing.md`
+- `social-links.md`
+- `dashboard.md`
+- `about.md`
+- `tech-stack.md`
+- `projects.md`
+- `analytics.md`
+- `snake.md`
+- `content-dashboard.md`
+- `youtube-feed.md`
+- `instagram.md`
+- `linkedin.md`
+- `npm-packages.md`
+- `blog-feed.md`
+- `animations.md`
+- `support.md`
+- `footer.md`
 
-```md
-repo=ultimate-rag-agent
-```
+GitHub does not automatically import Markdown partials into a profile README, so `README.md` remains the rendered source of truth.
 
-## Social Buttons
+## Dynamic Content
 
-All profile links intentionally use `xxxxxxxxx`.
+Dynamic sections are controlled by update markers in `README.md`.
 
-Replace them with final URLs only after the public accounts are ready.
+Configuration files:
 
-## Workflow Timing
+- `config/content-sources.json` - DEV.to, Hashnode, Medium, GitHub releases, npm packages, and external blog feeds.
+- `config/youtube.json` - YouTube channel ID, channel URL, max videos, and optional API stats mode.
+- `config/instagram.json` - Instagram profile URL, follower count, and six thumbnail/link entries.
+- `config/linkedin.json` - LinkedIn profile card, followers, experience, skills, and manually curated posts.
+- `config/npm.json` - npm package names for daily registry updates.
+- `config/blog.json` - DEV.to, Hashnode, Medium, and custom RSS feeds.
 
-Automation schedules use UTC cron.
-
-Adjust the cron values in:
+Workflow files:
 
 - `.github/workflows/snake.yml`
 - `.github/workflows/metrics.yml`
-- `.github/workflows/blog.yml`
+- `.github/workflows/content.yml`
 - `.github/workflows/youtube.yml`
-- `.github/workflows/README_UPDATE.yml`
+- `.github/workflows/instagram.yml`
+- `.github/workflows/linkedin.yml`
+- `.github/workflows/npm.yml`
+- `.github/workflows/blog.yml`
+- `.github/workflows/github-stats.yml`
+- `.github/workflows/readme-update.yml`
+
+Instagram cannot be reliably scraped directly from GitHub Actions. Use `config/instagram.json` with thumbnail URLs generated from an approved Instagram API, CDN export, or manually curated image links.
+
+## Social And Support Links
+
+All profile and support links intentionally use `xxxxxxxxx`.
+
+Replace them with final URLs only after the public accounts and payment links are ready.
 
 ## SEO
 

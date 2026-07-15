@@ -1,0 +1,27 @@
+{
+  "devto": {
+    "username": "samcodex"
+  },
+  "hashnode": {
+    "feedUrl": ""
+  },
+  "medium": {
+    "username": "samcodex"
+  },
+  "github": {
+    "owner": "samcodex",
+    "repositories": [
+      "ultimate-rag-agent",
+      "personal-ide",
+      "password-manager",
+      "couples-space",
+      "once-one-chat"
+    ]
+  },
+  "npm": {
+    "packages": []
+  },
+  "blog": {
+    "feeds": []
+  }
+}

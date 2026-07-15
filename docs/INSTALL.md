@@ -1,6 +1,6 @@
 # Installation
 
-This repository is designed to be used as a GitHub profile repository for the developer brand **Sam Codex**.
+This repository is designed as a premium GitHub profile repository for the developer brand **Sam Codex**.
 
 ## 1. Create the Profile Repository
 
@@ -11,7 +11,21 @@ This repository is designed to be used as a GitHub profile repository for the de
 
 GitHub will render `README.md` as the profile landing page.
 
-## 2. Replace Brand Links
+## 2. Confirm Repository Structure
+
+The production profile package contains:
+
+```text
+.github/
+assets/
+components/
+docs/
+README.md
+```
+
+The README is written in GitHub-safe HTML and Markdown.
+
+## 3. Replace Social Links
 
 Replace every `xxxxxxxxx` value in `README.md` with the final public URL for:
 
@@ -22,19 +36,17 @@ Replace every `xxxxxxxxx` value in `README.md` with the final public URL for:
 - Twitter/X
 - Website
 - Email
-- DEV.to
-- Hashnode
 
-## 3. Set the GitHub Username
+## 4. Set the GitHub Username
 
 Search the repository for `samcodex` and replace it with the exact GitHub username if it differs from the final account name.
 
 Files to update:
 
 - `README.md`
-- `.github/workflows/*.yml` only if you hardcode profile URLs
+- `.github/workflows/*.yml`
 
-## 4. Enable Workflow Permissions
+## 5. Enable Workflow Permissions
 
 Open the repository settings:
 
@@ -44,53 +56,65 @@ Open the repository settings:
 4. Under **Workflow permissions**, choose **Read and write permissions**.
 5. Save the setting.
 
-## 5. Configure Metrics Token
+## 6. Configure Dynamic Feeds
 
-The metrics workflow works best with a personal access token.
+Edit these files before the first scheduled workflow run:
 
-1. Create a GitHub token with read access to public profile data.
-2. Add it as a repository secret named `METRICS_TOKEN`.
-3. Run **Generate GitHub Metrics** manually from the Actions tab.
+- `config/content-sources.json`
+- `config/youtube.json`
+- `config/instagram.json`
+- `config/linkedin.json`
+- `config/npm.json`
+- `config/blog.json`
 
-If you skip this step, the workflow falls back to `GITHUB_TOKEN`, but some metrics may be limited.
+For YouTube view counts, add a repository secret named `YOUTUBE_API_KEY`. Without that secret, the YouTube workflow still updates thumbnails, titles, links, and published dates from RSS.
 
-## 6. Configure Blog Feeds
-
-Open `.github/workflows/blog.yml` and replace:
-
-```yml
-feed_list: "xxxxxxxxx, xxxxxxxxx, xxxxxxxxx"
-```
-
-Use RSS feed URLs for DEV.to, Hashnode, and Medium.
-
-## 7. Configure YouTube Feed
-
-Open `.github/workflows/youtube.yml` and replace:
-
-```yml
-feed_list: "xxxxxxxxx"
-```
-
-Use the channel RSS feed URL.
-
-## 8. Confirm Featured Repositories
-
-The README ships with featured repository cards for:
-
-- `ultimate-rag-agent`
-- `personal-ide`
-
-Update the repository names and links if the final repositories use different names.
-
-## 9. Run Automation
+## 7. Run Workflows
 
 From the GitHub Actions tab, run:
 
 - `Generate Contribution Snake`
 - `Generate GitHub Metrics`
-- `Update Latest Articles`
-- `Update Latest Videos`
-- `README Refresh`
+- `Update Latest Content Dashboard`
+- `Update YouTube Feed`
+- `Update Instagram Section`
+- `Update LinkedIn Dashboard`
+- `Update npm Packages`
+- `Update Blog Feed`
+- `Update GitHub Stats`
+- `README Update`
 
-The profile is ready after the first successful workflow pass.
+Schedules:
+
+- Contribution snake updates daily.
+- GitHub metrics update daily.
+- Latest content updates every six hours.
+- YouTube updates every six hours.
+- Instagram config section updates daily.
+- LinkedIn config section updates daily.
+- npm package cards update daily.
+- Blog cards update daily.
+- GitHub stats update daily.
+- README refresh marker updates daily.
+
+## 8. Replace the Portrait
+
+No portrait image file was present in the attached files. The current `assets/profile.png` is a transparent, gold-lit profile asset so the hero can render cleanly until the final portrait is available.
+
+To use the final portrait:
+
+1. Remove the portrait background.
+2. Add a soft gold rim light.
+3. Export as transparent PNG.
+4. Save over `assets/profile.png`.
+
+## 9. Verify Hero Assets
+
+Required assets:
+
+- `assets/banner.png` at `1280x640`
+- `assets/profile.png` with transparent background
+- `assets/logo.svg`
+- `assets/divider.svg`
+
+The profile is ready after the README and assets are pushed to the public profile repository.
